@@ -386,8 +386,7 @@ education.displayOnline = function() {
     var formattedDates = HTMLonlineDates.replace(data, thisOnlineCourse.dates);
     var formattedonlineURL = HTMLonlineURL.replace(data, thisOnlineCourse.url)
       .replace("#", thisOnlineCourse.url);
-    $(".education-entry:last").append(formattedTitleSchool,formattedDates,
-      formattedonlineURL);
+    $(".education-entry:last").append(formattedTitleSchool,formattedDates);
   }
 };
 

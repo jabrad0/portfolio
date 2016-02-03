@@ -32,9 +32,13 @@
   display: inline;
 }
 
+.center-text {
+  color: #484848;
+}
+
 h1 {
     font-size: 40px;
-    color: #F5A623;
+    color: #484848;
     line-height: 48px;
     display: inline;
 }
@@ -48,7 +52,7 @@ h2 {
 }
 
 h3 {
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 20px;
     color: #000000;
     line-height: 22px;
@@ -93,28 +97,36 @@ p {
 }
 
 a {
-    color: #1199C3;
+    color: #db4a39;
     text-decoration: none;
     margin-top: 10px;
     display: block;
-
 }
+
+/*a[href^="https://"] {
+  color: purple;
+  text-decoration: none;
+}*/
 
 .project-entry a {
   width: 33%;
+  text-decoration: none;
 }
 
 .work-entry a {
   width: 28%;
+  text-decoration: none;
 }
 
 .education-entry a {
   width: 35%;
+  text-decoration: none;
 }
 
 .onlineclassUrl {
   margin-top: 0;
 }
+
 .workPublication {
   margin: 0;
   width: 25%;
@@ -134,7 +146,8 @@ hr {
 }
 
 .resumePdf a:hover {
-  color: #40adcf;
+  color: #1199C3;
+  text-decoration: none;
 }
 
 .resumePdf.flex-box {
@@ -147,21 +160,24 @@ hr {
 }
 
 #topContacts a {
-    color: #F3F3F3;
+    color: #484848;
     display: inline;
 }
 
 #topContacts a:hover {
     color: #1199C3;
+    text-decoration: none;
 }
 
 #footerContacts a {
-    color: #F3F3F3;
+    color: #484848;
     display: inline;
+
 }
 
 #footerContacts a:hover {
     color: #1199C3;
+    text-decoration: none;
 }
 
 .welcome-message {
@@ -176,22 +192,23 @@ hr {
 }
 
 #skillsH3 {
-    color: #F5AE23;
+    color: #db4a39;
     display: none;
 }
 
 .orange {
-    background-color: #F5AE23;
+    background-color: #db4a39;
 }
 
 .orange-text {
-    color: #F5AE23;
+    color: #db4a39;
 }
+
 
 .white-text {
     /*font-weight: bold;*/
 
-    color: #ccc;
+    color: #484848;
 }
 
 .gray {
@@ -201,11 +218,11 @@ hr {
 }
 
 .dark-gray {
-    background-color: #4A4A4A;
+    background-color: #ddd;
 }
 
 #header {
-    background-color: #484848;
+    background-color: #ddd;
     margin-top: auto;
 }
 
@@ -291,7 +308,7 @@ img {
 
 span {
     padding: 5px;
-    color: #ccc;
+    color: #484848;
 }
 
 #letsConnect {

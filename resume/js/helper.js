@@ -54,7 +54,7 @@ var HTMLschoolPublication = '<a class ="workPublication" href=" #" target="_blan
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#" target="_blank">%data%';
 var HTMLonlineSchool = ' — %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
+var HTMLonlineDates = '<div class="date-text">%data%</div><br>';
 var HTMLonlineURL = '<br><a href="#" target="_blank" class="onlineclassUrl">%data%</a>';
 
 var googleMap = '<div id="map"></div>';
