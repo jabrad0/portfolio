@@ -1,0 +1,156 @@
+/** {
+    outline: 1px solid red !important;
+}*/
+/*box-sizing calculates elements size to include both border and padding (not margin) this is a new thing and some browsers have trboule with so these webkits add browser specificatios*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
+    color: black;
+    display: inline-block;
+    text-shadow: 3px 3px 3px #bcbbbb;
+    width: 2.8em;
+    margin-top: 1.2em;
+    font-weight: 500;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(#fff, #6e6e6e); /*For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(#fff, #6e6e6e);/*For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(#fff, #6e6e6e);/*For Firefox 3.6 to 15*/
+  background: linear-gradient(#fff, #6e6e6e);/*Standard syntax*/
+}
+
+/*Overwrite bootstrap a tag color*/
+a {
+    color: #000;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    border-width: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 24px;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+.text-muted {
+    color: #bcbbbb;
+}
+
+#travels {
+   color: #969595;
+ }
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.main-container-hr {
+    background-color: #bcbbbb;
+    height: 1px;
+}
+
+.about-me-hr {
+    height: 1em;
+}
+
+.travels {
+    color: #ccc;
+}
+
+.return-top {
+    height: 3em;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 990px) {
+  img.img-responsive.center-block  {
+    margin-top: 5%;
+  }
+}
+/*CONTACT FORM*/
+
+/*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/
+
+/*body { background:rgb(30,30,40); }*/
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #49a5ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #49a5ff; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  /*font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
+  width: 100%;
+  background:#49a5ff;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:500;
+}
+[type="submit"]:hover { background:#CC4949; }
