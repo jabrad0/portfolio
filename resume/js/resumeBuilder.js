@@ -163,12 +163,29 @@ var projects = {
       'stack': ['Python', 'Twitter API'],
       'url': 'https://twitter.com/spiritual_corky',
       'dates': 'Winter 2015',
-      'description': 'This project is a Python script run from my Mac terminal. The script generates a random mashup quote from the movies "Waiting for Guffman" and "Jesus Christ Superstar" using <a href = http://setosa.io/blog/2014/07/26/markov-chains/ target = "_blank" class="inline_link">Markov Chains </a>. I use the Twitter API to create the live Twitter feed. Click on the image for more details.',
+      'description': 'This project is a Python script run from my Mac terminal. The script generates a random mashup quote from the movies "Waiting for Guffman" and "Jesus Christ Superstar" using Markov Chains. I use the Twitter API to create the live Twitter feed. Click on the image for more details.',
       'images': {
          './resume/images/corky_197x142.png': ["Screenshot of Twitter Feed for Spiritual Corky", "Basically, a python dictionary is built with the keys being a sequence (tuple) of n words (n is provided as an input argument when the script is run) and the value being word n+1. (If the key already exists, rather than overwrite this key value pair - this value of the key is appended giving the key more than 1 value.) Initially, the script randomly picks a key and pairs it with its value (randomly chosen if more than one exists). This is the 'seed' of the Markov Chain. The script then moves to the second word in that key which becomes the first word in a new key and previous word n+1 is now assigned as the last word of the new key. A value of this key is randomly chosen. After a hardcoded number of cycles, these pairings are concatenated together and tweeted.", './resume/images/corky_500x360.png']
       }
      }]
 };
+
+// ===== Scroll to Top Arrow  ====
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+// ===== End Scroll to Top Arrow  ====
+
+
 // HEADER Begin
 //Bio via an 'Encapsulating Function'
 var data = '%data%';
@@ -263,11 +280,10 @@ projects.display = function() {
     $("#projects").append(HTMLprojectStart);
 
     if (thisProject.url === "NA") {
-      var formattedTitle = HTMLprojectTitleNoLink.replace(data, thisProject.title);
+      var formattedTitle = HTMLprojectTitleNoLink.replace(data, thisProject.title).replace(data, thisProject.title);
       $(".project-entry:last").append(formattedTitle);
     } else {
-      var formattedTitle = HTMLprojectTitle.replace(data, thisProject.title)
-        .replace("#", thisProject.url);
+      var formattedTitle = HTMLprojectTitle.replace(data, thisProject.title).replace(data,  thisProject.title).replace("#", thisProject.url);  //second data is used for link to ID in HTML
       var formattedURL = HTMLprojectURL.replace(data, thisProject.url);
       var formattedTitleURL = formattedTitle + formattedURL;
       $(".project-entry:last").append(formattedTitleURL);

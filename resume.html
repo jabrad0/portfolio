@@ -11,10 +11,21 @@
     <link rel="stylesheet" href="./resume/css/style.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:100,300'>
 
-    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-</head>
+    <!-- SCROLL ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-<body>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+<!-- Script makes resume page shift down onload when linked from index.html via clicking on project image -->
+    <script>
+    var shiftWindow = function() { scrollBy(0, -80) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+
+</head>
+<!-- This "<body onload="load()">" allows script above to work  -->
+<body onload="load()">
     <div id="main">
         <nav class="navbar navbar-inverse navbar-static-top" id="nav">
             <div class="container">
@@ -46,6 +57,11 @@
         </nav>
         <!--/.navbar -->
 
+
+        <!-- Return to Top Arrow -->
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+          <!-- End Return to Top Arrow -->
+
         <div id="header" class="center-content clearfix">
             <ul id="topContacts" class='flex-box'></ul>
         </div>
@@ -68,6 +84,7 @@
             </ul>
         </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./resume/js/bootstrap.min.js"></script>
     <script src="./resume/js/helper.js"></script>

@@ -32,6 +32,13 @@ a {
     color: #000;
 }
 
+a:hover {
+  color: #1199C3;
+  text-decoration: none;
+}
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     color: black;
@@ -121,7 +128,7 @@ form { max-width:420px; margin:50px auto; }
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #49a5ff;
+  border:2px solid #1199C3;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -130,7 +137,7 @@ form { max-width:420px; margin:50px auto; }
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #49a5ff; }
+.feedback-input:focus { border:2px solid #1199C3; }
 
 textarea {
   height: 150px;
@@ -141,7 +148,7 @@ textarea {
 [type="submit"] {
   /*font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
   width: 100%;
-  background:#49a5ff;
+  background:#1199C3;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -153,4 +160,48 @@ textarea {
   margin-top:-4px;
   font-weight:500;
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { background:#db4a39; }
+
+
+/*Return to top Arrow*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}

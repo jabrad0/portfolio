@@ -31,7 +31,7 @@ var HTMLworkPublicationStart = '<div class="workPublication"><em>Publication:  <
 var HTMLworkPublication = '<a class ="workPublication" href=" #" target="_blank">%data%</a></div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#" target="_blank">%data%';
+var HTMLprojectTitle = '<a href="#" id="%data%" target="_blank">%data%';
 var HTMLprojectTitleNoLink = '<div>%data%</div>';
 var HTMLprojectURL = ' — %data%</a>';
 var HTMLstackStart = '<div class="stack">Stack:  </div>';
@@ -60,7 +60,6 @@ var HTMLonlineURL = '<br><a href="#" target="_blank" class="onlineclassUrl">%dat
 var googleMap = '<div id="map"></div>';
 
 
-
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
 */
@@ -73,11 +72,7 @@ clickLocations = [];
  the initial content for that anchor under the navbar, hidden from the user.
  This code fixes it:
 */
-var shiftWindow = function() {
-    scrollBy(0, -80)
-};
-if (location.hash) shiftWindow();
-window.addEventListener("hashchange", shiftWindow);
+
 
 // /*
 //  * Logs x,y coordinates in console

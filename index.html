@@ -22,6 +22,9 @@
 
     <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico">
 
+    <!-- SCROLL ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <!-- TODO: -->
     <!-- at final need to minify css and js -->
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
@@ -62,9 +65,9 @@
             <div class="col-md-12">
                 <nav id="drawer" class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#projects">Projects</a>
-                        </li>
                         <li class="nav-item"><a href="./resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item"><a href="#projects">Projects</a>
                         </li>
                         <li class="nav-item"><a href="#travels">Travels</a>
                         </li>
@@ -78,7 +81,13 @@
 
 
     <div class="container main-container">
-        <div class="row about-me-hr">
+
+
+      <!-- Return to Top Arrow -->
+      <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+        <!-- End Return to Top Arrow -->
+
+            <div class="row about-me-hr">
             <div class="col-md-12">
                 <hr class="main-container-hr">
             </div>
@@ -86,7 +95,13 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class='text-center'>I'm Juli Brady</h2>
-                <p class='text-center'>Four dollar toast you probably haven't heard of them gentrify brooklyn cornhole cliche whatever, fixie aesthetic paleo venmo roof party plaid tousled waistcoat. Microdosing humblebrag bicycle rights neutra. Everyday carry locavore before they sold out 90's. Jean shorts pop-up chicharrones, irony bushwick cornhole 8-bit intelligentsia cred migas photo booth mumblecore. </p>
+                <div class="mystory1">When I was 3 years old, I would jump from a stool through the air, across the room, into my dad's arms while he sat in his chair. Sometimes he would not be paying attention.</div>
+
+              <div class="mystory2">I think these past couple years have been the closest I have gotten to recreating that jump - the adult version.</div><br />
+                <div>Here I am in Nashville, trying to find my footing and "start over". I have spent the last ten years as a Civil/Environmental Engineer in California. I just jumped and landed in Nashville. I'm not sure if it is going to catch me or not.</div>
+                <div>  I love to go fast, so anything with wheels typically works for me.  I am often on my bicycle (or snowboarding at Shelby Park if it blizzards). Trail running is better than hiking. I also love beer, thus why I probably need to keep moving.
+              </div>
+
             </div>
         </div>
         <div class="row">
@@ -96,26 +111,35 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="text-muted" id="projects">Projects</h2>
+                <h2 class="text-muted text-inline" id="projects">Projects</h2>
+                <p>Click on the project image for more details, or link directly to the Github repository
+                or webpage via the links below the image.</p>
+
+
+
             </div>
         </div>
         <div class="row text-center example-work">
             <div class="col-md-4">
-                <img class="img-responsive center-block" src="./home/images/getgo_home_300x216.png" alt="screenshot image of project">
-                <h3 class="text-uppercase">Getgo</h3>
-                <a href="https://github.com/jabrad0/Getgo" target="_blank">https://github.com/jabrad0/Getgo</a></br>
-                <a class="weblink" href="https://getartandgo.herokuapp.com/" target="_blank">https://getartandgo.herokuapp.com/</a>
+
+                <a class="anchor" href="./resume.html#Getgo"><img class="img-responsive center-block" src="./home/images/getgo_home_300x216.png" alt="screenshot image of project Getgo">
+
+                <h3 class="text-uppercase">Getgo</h3></a>
+                <a href="https://github.com/jabrad0/Getgo" target="_blank">Getgo GitHub Link</a></br>
+                <a class="weblink" href="https://getartandgo.herokuapp.com/" target="_blank">Getgo Webpage</a>
+
             </div>
             <div class="col-md-4">
-                <img class="img-responsive center-block" src="./home/images/corky_300x216.png" alt="screenshot image of project">
-                <h3 class="text-uppercase">Spiritual Corky</h3>
-                <a href="https://github.com/jabrad0/Spirtual_Corky" target="_blank">https://github.com/jabrad0/Spirtual_Corky</a></br>
-                <a class="weblink" href="https://twitter.com/spiritual_corky" target="_blank">https://twitter.com/spiritual_corky</a>
+                <a class="anchor" href="./resume.html#Spiritual Corky"><img class="img-responsive center-block" src="./home/images/corky_300x216.png" alt="screenshot image of Twitter project Spiritual Corky">
+
+                <h3 class="text-uppercase">Spiritual Corky</h3></a>
+                <a href="https://github.com/jabrad0/Spirtual_Corky" target="_blank">Spirtual Corky GitHub Link</a></br>
+                <a class="weblink" href="https://twitter.com/spiritual_corky" target="_blank">Twitter Link</a>
             </div>
             <div class="col-md-4">
-                <img class="img-responsive center-block" src="./home/images/frogger_300x216.png" alt="screenshot image of project">
-                <h3 class="text-uppercase">Arcade</h3>
-                <a href="https://github.com/jabrad0/Udacity_FEND_P3" target="_blank">https://github.com/jabrad0/Udacity_FEND_P3</a>
+                <a class="anchor" href="./resume.html#Udacity FrontEnd Nanodegree"><img class="img-responsive center-block" src="./home/images/frogger_300x216.png" alt="screenshot image of project">
+                <h3 class="text-uppercase">Arcade</h3></a>
+                <a href="https://github.com/jabrad0/Udacity_FEND_P3" target="_blank">Arcade Webpage</a>
             </div>
         </div>
         <div class="row">
@@ -136,8 +160,8 @@
                         <source class="img-responsive center-block" media="(min-width: 500px)" srcset="./home/images/unitedstates_medium.jpg">
                             <img class="img-responsive center-block" src="./home/images/unitedstates_small.jpg" alt="cartoon drawing of united states with routes of travel from california to east coast and back">
                 </picture>
-                <!--START JUICEBOX EMBED-->
-                <script src="juicebox_gallery/jbcore/juicebox.js"></script>
+                <!-- START JUICEBOX EMBED-->
+                <!-- <script src="juicebox_gallery/jbcore/juicebox.js"></script>
                 <script>
                 new juicebox({
                 containerId: "juicebox-container",
@@ -146,8 +170,8 @@
                 backgroundColor: "#222222"
                 });
                 </script>
-                <div id="juicebox-container"></div>
-                <!--END JUICEBOX EMBED-->
+                <div id="juicebox-container"></div> -->
+                <!--END JUICEBOX EMBED -->
             </div>
         </div>
         <div class="row">
@@ -177,11 +201,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="return-top">
-                <a href="#top">Back to top of page</a>
-            </div>
+
         </div>
     </div>
+
 
 
 
@@ -189,6 +212,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./home/js/bootstrap.js"></script>
     <script src="./home/js/script.js"></script>
+
 
 </body>
 
