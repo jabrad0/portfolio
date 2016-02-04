@@ -102,7 +102,7 @@ var work = {
             'place_id': 'ChIJ00mFOjZ5hYARk-l1ppUV6pQ',
             'dates': '2006-2010, 2013-2015',
             'url': 'https://www.linkedin.com/in/streamborn',
-            'description': 'Managed simultaneous projects, budgets, and deadlines for ongoing investigation remediation projects. Projects included large scale excavations, subsurface drilling, construction, and implementation of remediation systems. Prepared proposals and cost estimates for clients. Interacted with clients and government regulators. Made on-the-spot project decisions in the field.'
+            'description': ' &#8226 Managed simultaneous projects, budgets, and deadlines for ongoing investigation remediation projects (projects included large scale excavations, subsurface drilling, construction, and design and implementation of remediation systems). &#8226 Prepared proposals and cost estimates for clients. &#8226 Interacted with clients and government regulators. &#8226 Made pertinent on-the-spot project decisions in the field.'
         }, {
             'employer': 'Iris Environmental',
             'title': 'Engineer',
@@ -110,7 +110,7 @@ var work = {
             'place_id': 'ChIJA-2qKIt9hYARZ5N1NdUVtHE',
             'dates': '2010-2013',
             'url': 'http://www.irisenv.com/',
-            'description': 'Collaborated with teams regarding investigation remediation project strategies. Managed multiple internal staff, contractors, and projects. Prepared technical reports. Developed a sampling program and trained staff on best use.'
+            'description': '&#8226 Collaborated with teams regarding investigation remediation project strategies. &#8226 Managed multiple projects, staff members, contractors. &#8226 Prepared technical reports. &#8226 Developed a sampling program and trained staff on it.'
         }, {
             'employer': 'Kennedy-Jenks Consultants',
             'title': 'Staff Engineer',
@@ -118,7 +118,7 @@ var work = {
             'place_id': 'ChIJ-ZeDsnLGmoAR238ZdKpqH5I', //retrieved from placeData via Google in helper.js
             'dates': '2003-2006',
             'url': 'http://www.kennedyjenks.com/',
-            'description': 'Conducted field work to investigate contaminated soil and groundwater. Produced project investigation reports. Provided QA/QC on large amounts of investigation data.'
+            'description': '&#8226 Conducted field work to investigate contaminated soil and groundwater. &#8226 Produced project investigation reports. &#8226 Provided QA/QC on large amounts of investigation data.'
         }, {
             'employer': 'USDA',
             'title': 'Staff Engineer',
@@ -126,7 +126,7 @@ var work = {
             'place_id': 'ChIJ0WHAIi0hoFQRbK3q5g0V_T4',
             'dates': '2000',
             'url': 'http://www.fsa.usda.gov/',
-            'description': ['Conducted post-wildfire research in the Bitterroot Valley of Montana in order to compare simulated rain infiltration rates on severly burned areas with that of undistrubed areas.', 'http://forest.moscowfsl.wsu.edu/engr/library/Robichaud/Robichaud2001i/2001i.html']
+            'description': ['&#8226 Conducted post-wildfire research in the Bitterroot Valley of Montana in order to compare simulated rain infiltration rates on severly burned areas with that of undistrubed areas.', 'http://forest.moscowfsl.wsu.edu/engr/library/Robichaud/Robichaud2001i/2001i.html']
         }
 
     ]
@@ -134,14 +134,14 @@ var work = {
 
 var projects = {
      'project': [{
-      'title': 'Udacity FrontEnd Nanodegree',
-      'stack': ['Javascript', 'jQuery', 'HTML5', 'CSS', 'HTML5 Canvas', 'Bootstrap', 'Grunt', 'GoogleMaps API'],
+      'title': 'Udacity Front End Nanodegree',
+      'stack': ['Javascript','jQuery', 'HTML5', 'CSS', 'HTML5 Canvas', 'Bootstrap', 'Grunt', 'GoogleMaps API'],
       'url': 'NA',
       'dates': 'Fall 2015 - Winter 2016',
-      'description': 'This project is currently in progress. It will have six mini projects upon completion. I signed up for the Udacity FrontEnd Nanodegree course in order to improve my fundamental understanding of frontend web development, responsive web design, and optimization as well as continuing to work on my HTML, CSS, and Javascript skills. Click on any project for more details.',
+      'description': 'This project is currently in progress. It will have six mini projects upon completion. I signed up for the Udacity Front End Nanodegree course in order to improve my fundamental understanding of front end web development, responsive web design, and optimization as well as continuing to work on my HTML, CSS, and Javascript skills. Click on any project for more details.',
       //'images: {'image href': [alt text, CaptionText, LargeImageSRC, liveURL], image href#2 : [ array of values]}
       'images': {
-       './resume/images/portfolio_197x142.png': ['Screenshot of Portfolio Home Page', 'Responsive Portfolio Focus:  dynamically sized items, media queries, CSS flexbox, common responsive patterns, breakpoints, optimizing layouts, image sizing.', './resume/images/portfolio_500x360.png'],
+       './resume/images/portfolio_197x142.png': ['Screenshot of Portfolio Home Page', 'Responsive Portfolio Focus:  dynamically sized items, media queries, CSS flexbox, common responsive patterns, breakpoints, optimizing layouts, and image sizing.', './resume/images/portfolio_500x360.png'],
 
        './resume/images/resume_197x142.png': ['Screenshot of Interactive Resume', 'Interactive Resume Focus: JSON data structures, Javascript (objects, functions, conditionals, and control structures), jQuery, PDF.js, and GoogleMaps API.', './resume/images/resume_500x360.png'],
 
@@ -165,7 +165,7 @@ var projects = {
       'dates': 'Winter 2015',
       'description': 'This project is a Python script run from my Mac terminal. The script generates a random mashup quote from the movies "Waiting for Guffman" and "Jesus Christ Superstar" using Markov Chains. I use the Twitter API to create the live Twitter feed. Click on the image for more details.',
       'images': {
-         './resume/images/corky_197x142.png': ["Screenshot of Twitter Feed for Spiritual Corky", "Basically, a python dictionary is built with the keys being a sequence (tuple) of n words (n is provided as an input argument when the script is run) and the value being word n+1. (If the key already exists, rather than overwrite this key value pair - this value of the key is appended giving the key more than 1 value.) Initially, the script randomly picks a key and pairs it with its value (randomly chosen if more than one exists). This is the 'seed' of the Markov Chain. The script then moves to the second word in that key which becomes the first word in a new key and previous word n+1 is now assigned as the last word of the new key. A value of this key is randomly chosen. After a hardcoded number of cycles, these pairings are concatenated together and tweeted.", './resume/images/corky_500x360.png']
+         './resume/images/corky_197x142.png': ["Screenshot of Twitter Feed for Spiritual Corky", "A python dictionary is built with the keys being a sequence (tuple) of n words (n is provided as an input argument when the script is run) and the value being word n+1. (If the key already exists, rather than overwrite this key value pair - this value of the key is appended giving the key more than 1 value.) Initially, the script randomly picks a key and pairs it with its value (randomly chosen if more than one exists). This is the 'seed' of the Markov Chain. The script then moves to the second word in that key which becomes the first word in a new key and previous word n+1 is now assigned as the last word of the new key. A value of this key is randomly chosen. After a hardcoded number of cycles, these pairings are concatenated together and tweeted.", './resume/images/corky_500x360.png']
       }
      }]
 };
