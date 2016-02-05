@@ -120,6 +120,10 @@ a:hover {
   width: 28%;
 }
 
+a.bug{
+  width: 50%;
+}
+
 .education-entry a {
   width: 35%;
 }
@@ -293,6 +297,12 @@ ul {
   display: none;
 }
 
+.footer-credit {
+  color: #484848;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
 img {
   padding: 10px;
 }
@@ -332,6 +342,13 @@ span {
     }
 }
 
+@media only screen and (min-width: 750px) {
+    #skillsH3,
+    .biopic {
+        display: block;
+    }
+}
+
 #map {
   display: block;
   height: 100%;
@@ -343,13 +360,6 @@ span {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-    #skillsH3,
-    .biopic {
-        display: block;
-    }
 }
 
 .navbar-inverse {

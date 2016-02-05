@@ -31,13 +31,13 @@ var HTMLworkPublicationStart = '<div class="workPublication"><em>Publication:  <
 var HTMLworkPublication = '<a class ="workPublication" href=" #" target="_blank">%data%</a></div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitleNoLink = '<div id="%data%">%data% </div>';
-var HTMLprojectTitle = '<a href="#" id="%data%" target="_blank">%data%';
-var HTMLprojectURL = ' — %data%</a>';
+var HTMLprojectTitle = '<div id="%data%">%data% </div>';
+
 var HTMLstackStart = '<div class="stack">Stack:  </div>';
 var HTMLstack = '<div class="stack">%data% </div>';
 var HTMLprojectDates = '<br><div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectURL = '<a href="#" class="bug" target="_blank">%data% Webpage --> (Developer Note: For now, please right click "Open Link In New Tab" to access)</a>';
 var HTMLprojectImage = '<a href="#" class="project-img"><img class="project-img" src="%data%" alt="%data%"></a>';
 var HTMLprojectFocus = '<p class="project-focus"></p>'
 var HTMLprojectLightboxURL = '<a href="#" target="_blank">Go To Site!</a>'

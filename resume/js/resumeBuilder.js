@@ -154,7 +154,7 @@ var projects = {
       'url': 'https://getartandgo.herokuapp.com/',
       'anchorid' : 'getgo',
       'dates': 'Fall 2014',
-      'description': 'Getgo was my capstone project while attending Hackbright Academy. It was independantly developed in five weeks after five weeks of fullstack web development "bootcamp". I wanted to build an application that allowed a user to find the best bike route to art and wine venues near their current location in Oakland CA. I also wanted to log the user\'s travels for the day and report their adventure back to them. Developer\'s note: An existing address must be entered (201 Orange Street). Click on any image for more details.',
+      'description': 'Getgo was my capstone project while attending Hackbright Academy. It was independantly developed in five weeks after five weeks of fullstack web development "bootcamp". I wanted to build an application that allowed a user to find the best bike route to art and wine venues near their current location in Oakland CA. I also wanted to log the user\'s travels for the day and report their adventure back to them. <strong>Developer\'s note: An existing address must be entered (e.g., 201 Orange Street)</strong>. Click on any image for more details.',
       'images': {
        './resume/images/getgo_197x142.png': ['Screenshot of Getgo Application Home Page', 'I used static open source data from the City of Oakland that documented art installations around the city as well as the Yelp API for a dynamic repository of local galleries and wineries. This is the home page where the user enters their current location.', './resume/images/getgo_500x360.png'],
        './resume/images/getgo_route_197x142.png': ['Second Screenshot of Getgo Application', 'Once the user enters their location, the browser submits the form to the server as HTTP Get request, the Google geocoder API converts the user address to lat/long coordinantes. Then the app makes two AJAX requests to Flask routes - one calls the Yelp API and passes the lat/long coordinate. The other Flask route calls the static JSON file for City of Oakland. I parse the data that is returned, itterate over it, build information windows, and have pins dropped, then I use the Google API to render directions on user clicks.', './resume/images/getgo_route_500x360.png'],
@@ -282,16 +282,8 @@ projects.display = function() {
     var thisProject = projects.project[i];
     $("#projects").append(HTMLprojectStart);
 
-    if (thisProject.url === "NA") {
-      var formattedTitle = HTMLprojectTitleNoLink.replace(data, thisProject.anchorid).replace(data, thisProject.title);
-      $(".project-entry:last").append(formattedTitle);
-    } else {
-      var formattedTitle = HTMLprojectTitle.replace(data, thisProject.anchorid)
-      .replace(data, thisProject.title).replace("#", thisProject.url);
-      var formattedURL = HTMLprojectURL.replace(data, thisProject.url);
-      var formattedTitleURL = formattedTitle + formattedURL;
-      $(".project-entry:last").append(formattedTitleURL);
-    }
+    var formattedTitle = HTMLprojectTitle.replace(data, thisProject.anchorid).replace(data, thisProject.title);
+    $(".project-entry:last").append(formattedTitle);
 
     $(".project-entry:last").append(HTMLstackStart);
     var lenStack = thisProject.stack.length;
@@ -300,6 +292,7 @@ projects.display = function() {
       var formattedStack = HTMLstack.replace(data, thisProject.stack[j]);
       $(".project-entry:last").append(formattedStack + separator);
     }
+
     var formattedDates = HTMLprojectDates.replace(data, thisProject.dates);
     var formattedDescription = HTMLprojectDescription.replace(data,
       thisProject.description);
@@ -310,8 +303,15 @@ projects.display = function() {
         .replace("#", key).replace(data, thisProject.images[key][0]);
       $(".project-entry:last").append(formattedImage);
     }
+
+    if (thisProject.url != "NA") {
+      var formattedURL = HTMLprojectURL.replace(data, thisProject.title)
+      .replace("#", thisProject.url);
+      $(".project-entry:last").append(formattedURL);
+    }
   }
-  // Start Lightbox code
+
+    // Start Lightbox code
   var $overlay = $("<div id='overlay'></div>");
   var $image = $("<img class='lightbox-img'>");
   var $caption = $("<p class='project-focus'></p>");
@@ -351,11 +351,19 @@ projects.display = function() {
     };
   });
 
+
   $overlay.click(function(){
     $overlay.hide();
   });   // End lightbox code
 
+
+
+
+
 }; //End Projects Encapsulating Function
+
+
+
 
 
 //Education via an 'Encapsulating Function'
@@ -389,7 +397,6 @@ education.displaySchools = function() {
     }
   }
 };
-
 
 var $education = $("#education");
 education.displayOnline = function() {

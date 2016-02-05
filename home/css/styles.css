@@ -114,6 +114,11 @@ ul {
   margin-left: 1em;
 }
 
+.footer {
+  color: #ccc;
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 990px) {
   img.img-responsive.center-block  {
     margin-top: 5%;

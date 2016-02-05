@@ -2,7 +2,7 @@
 @media screen and (min-width: 601px) {
   #return-to-top {
     position: fixed;
-    bottom: 40px;
+    bottom: 70px;
     right: 5px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
