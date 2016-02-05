@@ -1,19 +1,19 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
 }
 
 .clearfix {
-    overflow: auto;
+  overflow: auto;
 }
 
 .education-entry,
 .work-entry,
 .project-entry {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .project-entry:nth-child(n+3){
@@ -21,7 +21,7 @@
 }
 
 #header {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 .inline_link {
@@ -37,70 +37,69 @@
 }
 
 h1 {
-    font-size: 40px;
-    color: #484848;
-    line-height: 48px;
-    display: inline;
+  font-size: 40px;
+  color: #484848;
+  line-height: 48px;
+  display: inline;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 24px;
-    color: #999999;
-    line-height: 29px;
-    padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #999999;
+  line-height: 29px;
+  padding: 10px;
 }
 
 h3 {
-    /*font-style: italic;*/
-    font-size: 20px;
-    color: #000000;
-    line-height: 22px;
-    padding-top: 20px;
+  font-size: 20px;
+  color: #000000;
+  line-height: 22px;
+  padding-top: 20px;
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 14px;
-    color: #4A4A4A;
-    line-height: 17px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
 }
 
 h2,
 h3,
 h4,
 h5 {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .date-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999999;
-    line-height: 16px;
-    float: left;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: left;
 }
 
 .location-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999999;
-    line-height: 16px;
-    float: right;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: right;
 }
 
 p {
-    font-size: 14px;
-    color: #333333;
-    line-height: 21px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
 }
 
 a {
-    color: #db4a39;
-    text-decoration: none;
-    margin-top: 10px;
-    display: block;
+  color: #db4a39;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
 }
 
 a:hover {
@@ -108,13 +107,8 @@ a:hover {
   text-decoration: none;
 }
 
-/*a[href^="https://"] {
-  color: purple;
-  text-decoration: none;
-}*/
-
 .project-focus a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .project-entry a {
@@ -139,17 +133,19 @@ a:hover {
   width: 25%;
   display: inline;
 }
+
 .project-img{
   margin-top: 10px;
   margin-right: 15px;
 }
+
 a.project-img {
   display:inline;
 }
 
 hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .resumePdf.flex-box {
@@ -158,12 +154,12 @@ hr {
 }
 
 #topContacts {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 #topContacts a {
-    color: #484848;
-    display: inline;
+  color: #484848;
+  display: inline;
 }
 
 #topContacts a:hover {
@@ -177,83 +173,80 @@ hr {
 }
 
 #footerContacts a {
-    color: #484848;
-    display: inline;
+  color: #484848;
+  display: inline;
 
 }
 
 .welcome-message {
-    font-style: italic;
-    font-size: 18px;
-    color: #F3F3F3;
-    line-height: 28px;
+  font-style: italic;
+  font-size: 18px;
+  color: #F3F3F3;
+  line-height: 28px;
 }
 
 #skills {
-    display: block;
+  display: block;
 }
 
 #skillsH3 {
-    color: #db4a39;
-    display: none;
+  color: #db4a39;
+  display: none;
 }
 
 .orange {
-    background-color: #db4a39;
+  background-color: #db4a39;
 }
 
 .orange-text {
-    color: #db4a39;
+  color: #db4a39;
 }
 
 
 .white-text {
-    /*font-weight: bold;*/
-
-    color: #484848;
+  color: #484848;
 }
 
 .gray {
-    background-color: #F3F3F3;
-    padding-bottom: 10px;
-    clear: both;
+  background-color: #F3F3F3;
+  padding-bottom: 10px;
+  clear: both;
 }
 
 .dark-gray {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 #header {
-    background-color: #ddd;
-    margin-top: auto;
+  background-color: #ddd;
+  margin-top: auto;
 }
 
 .flex-box {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .center-content {
-    padding-top: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2.5%
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #skills {
-    columns: 4;
-    -webkit-columns: 4;
-    -moz-columns: 4;
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
 }
-
 
 /*Lightbox overlay*/
 #overlay {
@@ -268,53 +261,49 @@ ul {
 }
 
 #overlay img {
- margin-top: 20%;
+  margin-top: 20%;
 }
 
 #overlay p {
- color:white;
- margin-left: 22%;
- margin-right: 22%;
-
-
-
+  color:white;
+  margin-left: 22%;
+  margin-right: 22%;
 }
 
 /*map infowindow*/
 
 .iw_title {
-    font-size: 15px;
-    font-weight: 400;
-    padding: 10px;
-    background-color: #48b5e9;
-    color: white;
-    margin: 1px;
-    border-radius: 10px;
-    /* In accordance with the rounding of the default infowindow corners. */
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #48b5e9;
+  color: white;
+  margin: 1px;
+  border-radius: 10px;
 }
 
 .iw_city {
-    text-align: center;
+  text-align: center;
 }
 
 .biopic {
-    float: left;
-    padding: 10px;
-    width: 200px;
-    display: none;
+  float: left;
+  padding: 10px;
+  width: 200px;
+  display: none;
 }
 
 img {
-    padding: 10px;
+  padding: 10px;
 }
 
 span {
-    padding: 5px;
-    color: #484848;
+  padding: 5px;
+  color: #484848;
 }
 
 #letsConnect {
-    text-align: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -344,16 +333,16 @@ span {
 }
 
 #map {
-    display: block;
-    height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #mapDiv {
-    height: 400px;
-    width: 100%;
-    padding-bottom: 5%;
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
@@ -364,54 +353,54 @@ span {
 }
 
 .navbar-inverse {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    top: 0;
-    margin-bottom: 0;
-    border-radius: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 /*Return to top Arrow*/
 
 #return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 13px;
-    font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
-    color: #fff;
-    top: 5px;
+  color: #fff;
+  top: 5px;
 }

@@ -1,23 +1,18 @@
-/** {
-    outline: 1px solid red !important;
-}*/
-/*box-sizing calculates elements size to include both border and padding (not margin) this is a new thing and some browsers have trboule with so these webkits add browser specificatios*/
-
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 [class*="brandico-"]:before {
-    font-family: 'brandico', sans-serif;
-    color: black;
-    display: inline-block;
-    text-shadow: 3px 3px 3px #bcbbbb;
-    width: 2.8em;
-    margin-top: 1.2em;
-    font-weight: 500;
+  font-family: 'brandico', sans-serif;
+  color: black;
+  display: inline-block;
+  text-shadow: 3px 3px 3px #bcbbbb;
+  width: 2.8em;
+  margin-top: 1.2em;
+  font-weight: 500;
 }
 
 .gradient {
@@ -29,7 +24,7 @@
 
 /*Overwrite bootstrap a tag color*/
 a {
-    color: #000;
+  color: #000;
 }
 
 a:hover {
@@ -38,78 +33,85 @@ a:hover {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    color: black;
-    font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-weight: 300;
 }
 
 hr {
-    height: 1px;
-    background-color: black;
-    border-width: 0;
+  height: 1px;
+  background-color: black;
+  border-width: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
-    display: inline-block;
-    width: 24%;
-    text-align: center;
-    padding: 24px;
-    text-transform: uppercase;
-    line-height: 10px;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  padding: 24px;
+  text-transform: uppercase;
+  line-height: 10px;
 }
 
 .bio-red {
   color: #db4a39;
   font-weight: 900;
-
 }
 
 .text-muted {
-    color: #bcbbbb;
+  color: #bcbbbb;
+}
+
+#projects {
+  color: #838282;
 }
 
 #travels {
-   color: #969595;
- }
+  color: #707070;
+}
+
+#contact {
+  color: #5e5d5d;
+}
 
 .text-thin {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .title-super {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .title-logo {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .main-container-hr {
-    background-color: #bcbbbb;
-    height: 1px;
+  background-color: #bcbbbb;
+  height: 1px;
 }
 
 .about-me-hr {
-    height: 1em;
+  height: 1em;
 }
 
 .travels {
-    color: #ccc;
+  color: #ccc;
 }
 
 .return-top {
-    height: 3em;
-    margin-left: 1em;
+  height: 3em;
+  margin-left: 1em;
 }
 
 @media screen and (max-width: 990px) {
@@ -170,42 +172,42 @@ textarea {
 /*Return to top Arrow*/
 
 #return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 13px;
-    font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
-    color: #fff;
-    top: 5px;
+  color: #fff;
+  top: 5px;
 }

@@ -149,7 +149,7 @@ var projects = {
       }
      }, {
       'title': 'Getgo',
-      'stack': ['Python', 'Javascript', 'Flask', 'jQuery', 'Ajax', 'Jinja', 'JSON', 'HTML5', 'CSS', 'GoogleMaps API', 'Yelp API', ],
+      'stack': ['Python', 'Javascript', 'Flask', 'jQuery', 'Ajax', 'Jinja2', 'JSON', 'HTML5', 'CSS', 'GoogleMaps API', 'Yelp API', ],
       'url': 'https://getartandgo.herokuapp.com/',
       'dates': 'Fall 2014',
       'description': 'Getgo was my capstone project while attending Hackbright Academy. It was independantly developed in five weeks after five weeks of fullstack web development "bootcamp". I wanted to build an application that allowed a user to find the best bike route to art and wine venues near their current location in Oakland CA. I also wanted to log the user\'s travels for the day and report their adventure back to them. Developer\'s note: An existing address must be entered (201 Orange Street). Click on any image for more details.',
@@ -383,7 +383,6 @@ education.displaySchools = function() {
       $(".education-entry:last").append(formattedschoolPublication);
 
     }
-
   }
 };
 
