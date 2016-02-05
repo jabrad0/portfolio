@@ -137,6 +137,7 @@ var projects = {
       'title': 'Udacity Front End Nanodegree',
       'stack': ['Javascript','jQuery', 'HTML5', 'CSS', 'HTML5 Canvas', 'Bootstrap', 'Grunt', 'GoogleMaps API'],
       'url': 'NA',
+      'anchorid' : 'udacity', //anchor-id used to attach id to anchor tag so click from image on home pg to resume pg
       'dates': 'Fall 2015 - Winter 2016',
       'description': 'This project is currently in progress. It will have six mini projects upon completion. I signed up for the Udacity Front End Nanodegree course in order to improve my fundamental understanding of front end web development, responsive web design, and optimization as well as continuing to work on my HTML, CSS, and Javascript skills. Click on any project for more details.',
       //'images: {'image href': [alt text, CaptionText, LargeImageSRC, liveURL], image href#2 : [ array of values]}
@@ -151,6 +152,7 @@ var projects = {
       'title': 'Getgo',
       'stack': ['Python', 'Javascript', 'Flask', 'jQuery', 'Ajax', 'Jinja2', 'JSON', 'HTML5', 'CSS', 'GoogleMaps API', 'Yelp API', ],
       'url': 'https://getartandgo.herokuapp.com/',
+      'anchorid' : 'getgo',
       'dates': 'Fall 2014',
       'description': 'Getgo was my capstone project while attending Hackbright Academy. It was independantly developed in five weeks after five weeks of fullstack web development "bootcamp". I wanted to build an application that allowed a user to find the best bike route to art and wine venues near their current location in Oakland CA. I also wanted to log the user\'s travels for the day and report their adventure back to them. Developer\'s note: An existing address must be entered (201 Orange Street). Click on any image for more details.',
       'images': {
@@ -162,6 +164,7 @@ var projects = {
       'title': 'Spiritual Corky',
       'stack': ['Python', 'Twitter API'],
       'url': 'https://twitter.com/spiritual_corky',
+      'anchorid' : 'corky',
       'dates': 'Winter 2015',
       'description': 'This project is a Python script run from my Mac terminal. The script generates a random mashup quote from the movies "Waiting for Guffman" and "Jesus Christ Superstar" using Markov Chains. I use the Twitter API to create the live Twitter feed. Click on the image for more details.',
       'images': {
@@ -280,10 +283,11 @@ projects.display = function() {
     $("#projects").append(HTMLprojectStart);
 
     if (thisProject.url === "NA") {
-      var formattedTitle = HTMLprojectTitleNoLink.replace(data, thisProject.title).replace(data, thisProject.title);
+      var formattedTitle = HTMLprojectTitleNoLink.replace(data, thisProject.anchorid).replace(data, thisProject.title);
       $(".project-entry:last").append(formattedTitle);
     } else {
-      var formattedTitle = HTMLprojectTitle.replace(data, thisProject.title).replace(data,  thisProject.title).replace("#", thisProject.url);  //second data is used for link to ID in HTML
+      var formattedTitle = HTMLprojectTitle.replace(data, thisProject.anchorid)
+      .replace(data, thisProject.title).replace("#", thisProject.url);
       var formattedURL = HTMLprojectURL.replace(data, thisProject.url);
       var formattedTitleURL = formattedTitle + formattedURL;
       $(".project-entry:last").append(formattedTitleURL);

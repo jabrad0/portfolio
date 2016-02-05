@@ -31,8 +31,8 @@ var HTMLworkPublicationStart = '<div class="workPublication"><em>Publication:  <
 var HTMLworkPublication = '<a class ="workPublication" href=" #" target="_blank">%data%</a></div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectTitleNoLink = '<div id="%data%">%data% </div>';
 var HTMLprojectTitle = '<a href="#" id="%data%" target="_blank">%data%';
-var HTMLprojectTitleNoLink = '<div>%data%</div>';
 var HTMLprojectURL = ' — %data%</a>';
 var HTMLstackStart = '<div class="stack">Stack:  </div>';
 var HTMLstack = '<div class="stack">%data% </div>';
