@@ -5,6 +5,11 @@
     }
 }
 
+@media screen and (max-width: 990px) {
+  img.img-responsive.center-block  {
+    margin-top: 5%;
+  }
+}
 
 /*below 550*/
 @media screen and (max-width: 550px) {
@@ -17,6 +22,10 @@
         border-top: 18px double #bcbbbb;
         border-bottom: 6px solid #bcbbbb;
     }
+
+    .main-container-hr {
+        display: none;
+      }
 
     .nav {
         /*keeps ontop when moves offscreen*/
@@ -67,7 +76,7 @@
         margin-left: 5em;
         width: 0.5em;
     }
-    
+
     .navicon {
         height: 30px;
         width: 34px;

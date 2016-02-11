@@ -102,7 +102,7 @@ var work = {
             'place_id': 'ChIJ00mFOjZ5hYARk-l1ppUV6pQ',
             'dates': '2006-2010, 2013-2015',
             'url': 'https://www.linkedin.com/in/streamborn',
-            'description': ' &#8226 Managed simultaneous projects, budgets, and deadlines for ongoing investigation remediation projects (projects included large scale excavations, subsurface drilling, construction, and design and implementation of remediation systems). &#8226 Prepared proposals and cost estimates for clients. &#8226 Interacted with clients and government regulators. &#8226 Made pertinent on-the-spot project decisions in the field.'
+            'description': ' &#8226Managed simultaneous projects, budgets, and deadlines for ongoing investigation remediation projects (projects included large scale excavations, subsurface drilling, construction, and design and implementation of remediation systems). &#8226Prepared proposals and cost estimates for clients. &#8226Interacted with clients and government regulators. &#8226Made pertinent on-the-spot project decisions in the field.'
         }, {
             'employer': 'Iris Environmental',
             'title': 'Engineer',
@@ -110,7 +110,7 @@ var work = {
             'place_id': 'ChIJA-2qKIt9hYARZ5N1NdUVtHE',
             'dates': '2010-2013',
             'url': 'http://www.irisenv.com/',
-            'description': '&#8226 Collaborated with teams regarding investigation remediation project strategies. &#8226 Managed multiple projects, staff members, contractors. &#8226 Prepared technical reports. &#8226 Developed a sampling program and trained staff on it.'
+            'description': '&#8226Collaborated with teams regarding investigation remediation project strategies. &#8226Managed multiple projects, staff members, contractors. &#8226Prepared technical reports. &#8226Developed a sampling program and trained staff on it.'
         }, {
             'employer': 'Kennedy-Jenks Consultants',
             'title': 'Staff Engineer',
@@ -118,7 +118,7 @@ var work = {
             'place_id': 'ChIJ-ZeDsnLGmoAR238ZdKpqH5I', //retrieved from placeData via Google in helper.js
             'dates': '2003-2006',
             'url': 'http://www.kennedyjenks.com/',
-            'description': '&#8226 Conducted field work to investigate contaminated soil and groundwater. &#8226 Produced project investigation reports. &#8226 Provided QA/QC on large amounts of investigation data.'
+            'description': '&#8226Conducted field work to investigate contaminated soil and groundwater. &#8226Produced project investigation reports. &#8226Provided QA/QC on large amounts of investigation data.'
         }, {
             'employer': 'USDA',
             'title': 'Staff Engineer',
@@ -126,7 +126,7 @@ var work = {
             'place_id': 'ChIJ0WHAIi0hoFQRbK3q5g0V_T4',
             'dates': '2000',
             'url': 'http://www.fsa.usda.gov/',
-            'description': ['&#8226 Conducted post-wildfire research in the Bitterroot Valley of Montana in order to compare simulated rain infiltration rates on severly burned areas with that of undistrubed areas.', 'http://forest.moscowfsl.wsu.edu/engr/library/Robichaud/Robichaud2001i/2001i.html']
+            'description': ['&#8226Conducted post-wildfire research in the Bitterroot Valley of Montana in order to compare simulated rain infiltration rates on severly burned areas with that of undistrubed areas.', 'http://forest.moscowfsl.wsu.edu/engr/library/Robichaud/Robichaud2001i/2001i.html']
         }
 
     ]

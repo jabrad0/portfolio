@@ -5,6 +5,7 @@
   font-weight: 500;
 }
 
+
 .clearfix {
   overflow: auto;
 }
@@ -316,18 +317,34 @@ span {
   text-align: center;
 }
 
+#map {
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+/*Anything less than 1024px*/
 @media only screen and (max-width: 1024px) {
     #letsConnect {
         margin-top: 5%;
     }
 }
 
+/*Anything less than 900px*/
 @media only screen and (max-width: 900px) {
     .biopic {
         width: 175px;
     }
 }
 
+/*Anything less than 750px*/
 @media only screen and (max-width: 750px) {
     #letsConnect {
         margin-top: 10%;
@@ -341,7 +358,7 @@ span {
         display: none;
     }
 }
-
+/*larger than ipad*/
 @media only screen and (min-width: 750px) {
     #skillsH3,
     .biopic {
@@ -349,17 +366,35 @@ span {
     }
 }
 
-#map {
-  display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
+@media only screen and (max-width: 400px) {
+  #map {
+    height: 80%;
+  }
 
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+  .education-entry a {
+    width: 100%;
+  }
+
+  a.bug {
+    width: 100%;
+  }
+
+  .work-entry a {
+    width: 100%;
+  }
+
+  .workPublication {
+    word-wrap: break-word;
+  }
+
+  .work-entry p {
+    text
+  }
+
+  #main {
+    width: 100%;
+    overflow:hidden;
+  }
 }
 
 .navbar-inverse {
