@@ -2,7 +2,7 @@
 
 var bio = {
     'name': 'Juli Brady',
-    'role': 'Junior Developer',
+    'role': '',
     'contacts': {
         'email': 'julibrady@gmail.com',
         'github': 'jabrad0',
